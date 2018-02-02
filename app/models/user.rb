@@ -6,3 +6,5 @@ class User < ApplicationRecord
   has_secure_password
   validates :password, presence: true, length: {minimum:6}
 end
+#初期設定 Model 複雑な処理をかくのはこっち
+# Controllerは軽くする
