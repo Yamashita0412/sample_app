@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get    '/about',   to: 'static_pages#about'
   get    '/contact', to: 'static_pages#contact'
   get    '/signup',  to: 'users#new'
-  post '/signup',  to: 'users#create'              #この1行は自分で追加　これがないとエラーが起きるって相談する
+  #post '/signup',  to: 'users#create'              #この1行は自分で追加　これがないとエラーが起きるって相談する  リスト7.27は適用しない！
   get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
