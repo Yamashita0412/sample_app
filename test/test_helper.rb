@@ -7,7 +7,11 @@ Minitest::Reporters.use!
 class ActiveSupport::TestCase
 
   fixtures :all
+<<<<<<< HEAD
   #include ApplicationHelper
+=======
+
+>>>>>>> advanced-login
   # テストユーザーがログイン中の場合にtrueを返す
   def is_logged_in?
     !session[:user_id].nil?
