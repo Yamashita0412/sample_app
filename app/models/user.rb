@@ -33,6 +33,11 @@ class User < ApplicationRecord
     BCrypt::Password.new(remember_digest).is_password?(remember_token)
   end
 
+  # ユーザーのログイン情報を破棄する
+  def forget
+    update_attribute(:remember_digest, nil)
+  end
+
 end
 #初期設定 Model 複雑な処理をかくのはこっち
 # Controllerは軽くする
